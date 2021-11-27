@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro</h1>
+    </header>
+    <main>
+    <form action="cadastro">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" maxlength="100" required>
+        </div>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="telefone">Telefone:</label>
+            <input type="number" name="telefone" id="telefone" required>
+        </div>
+        <div>
+            <label for="date">Data de Nascimento:</label>
+            <input type="date" name="date" id="date">
+        </div>
+        <div>
+            <input type="radio" name="idade" value="Maioridade" id="Maioridade">
+            <label for="radio">Maior de 18 anos</label>
+        </div>
+        <div>
+            <input type="radio" name="idade" value="Menoridade" id="Menoridade">
+            <label for="idade">Menor de 18 anos</label>
+        </div>
+        <div>
+            <label for="ponto">Ponto de interesse na Cidade:</label>
+            <select name="ponto" id="ponto">
+                <option value="parcao">Parcão</option>
+                <option value="praça">Praça do chafariz</option>
+                <option value="safari">Pampa Safari</option>
+                <option value="itacolomi">Morro Itacolomi</option>
+            </select>  
+        </div>
+        <div>
+            <input type="checkbox" name="interesses" value="turista" id="turista">
+            <label for="interesses">Turista</label>
+        </div>
+        <div>
+            <input type="checkbox" name="interesses" value="residente" id="residente">
+            <label for="interesses">Residente</label>
+        </div>
+        <div>
+            <input type="checkbox" name="interesses" value="estudante" id="estudante">
+            <label for="interesses">Estudante</label>
+        </div>
+        <span> 
+            <button type="reset">Limpar</button>
+        </span>
+        <span> 
+            <button type="submit">Enviar</button>
+        </span>
+    </form>
+</main>
+<footer>
+    <p>Gravataí-RS</p>
+</footer>
+</body>
+</html>
